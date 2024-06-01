@@ -14,13 +14,10 @@ const Billing = () => (
 
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Easily control your <br className="sm:block hidden" /> billing &
-        invoicing
+        Amplia variedad <br className="sm:block hidden" />de pagos en diversas plataformas
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
-        aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
-        placerat.
+        Aceptamos pagos a nivel mundial, desde cuentas bancarias internacionales o locales, hasta cryptomonedas.
       </p>
 
       <div className="flex flex-row flex-wrap sm:mt-10 mt-6">

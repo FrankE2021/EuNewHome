@@ -6,12 +6,10 @@ const CardDeal = () => (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Find a better card deal <br className="sm:block hidden" /> in few easy
-        steps.
+        Estamos radicados principalmente <br className="sm:block hidden" /> en Cuba, Brazil y España.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
-        aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+        Sin embargo tenemos clientes de todas partes del mundo, que nos permiten abarcar una red de contactos de gran diversidad y multilingue.
       </p>
 
       <Button styles={`mt-10`} />

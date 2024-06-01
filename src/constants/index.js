@@ -25,21 +25,21 @@ export const features = [
     icon: star,
     title: "Beneficios",
     content:
-      "Las mejores ofertas",
+      "En nuestra empresa, brindamos soluciones innovadoras que optimizan la eficiencia operativa y garantizan un crecimiento sostenible para nuestros clientes.",
   },
   {
     id: "feature-2",
     icon: shield,
     title: "100% Seguros",
     content:
-      "Seguridad garantizada",
+      "Priorizamos la seguridad ofreciendo soluciones avanzadas que protegen los datos y garantizan la integridad operativa de nuestros clientes.",
   },
   {
     id: "feature-3",
     icon: send,
     title: "Soporte",
     content:
-      "Soporte en todo momento",
+      "Destacamos por ofrecer un soporte técnico excepcional, asegurando que nuestros clientes reciban asistencia rápida y experta en todo momento.",
   },
 ];
 
@@ -47,25 +47,25 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
+      "El dinero es solo una herramienta. Te llevará a donde desees, pero no te reemplazará como el conductor.",
+    name: "Deisy Daniela Acosta",
+    title: "Lider Regional",
     img: people01,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
+      "Gracias a Eurekae, nuestro negocio ha crecido exponencialmente con sus innovadoras soluciones y soporte excepcional.",
+    name: "Maria Teresa Jimenez",
+    title: "Cliente Premium",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
+      "Eurekae nos ha impresionado con su familiaridad y rapidez, facilitando una integración sin complicaciones en nuestro negocio.",
+    name: "Deisy Montoya Lara",
+    title: "Cliente Premium y Lider Promocional",
     img: people03,
   },
 ];
@@ -90,43 +90,43 @@ export const stats = [
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Links Utiles",
     links: [
       {
-        name: "Content",
+        name: "Contenido",
         link: "https://www.hoobank.com/content/",
       },
       {
-        name: "How it Works",
+        name: "Como trabajamos",
         link: "https://www.hoobank.com/how-it-works/",
       },
       {
-        name: "Create",
+        name: "Creacion",
         link: "https://www.hoobank.com/create/",
       },
       {
-        name: "Explore",
+        name: "Explorar",
         link: "https://www.hoobank.com/explore/",
       },
       {
-        name: "Terms & Services",
+        name: "Terminos & Servicios",
         link: "https://www.hoobank.com/terms-and-services/",
       },
     ],
   },
   {
-    title: "Community",
+    title: "Comunidad",
     links: [
       {
-        name: "Help Center",
+        name: "Centro de Ayuda",
         link: "https://www.hoobank.com/help-center/",
       },
       {
-        name: "Partners",
+        name: "Afiliados",
         link: "https://www.hoobank.com/partners/",
       },
       {
-        name: "Suggestions",
+        name: "Sugerencias",
         link: "https://www.hoobank.com/suggestions/",
       },
       {
@@ -134,20 +134,20 @@ export const footerLinks = [
         link: "https://www.hoobank.com/blog/",
       },
       {
-        name: "Newsletters",
+        name: "Noticias",
         link: "https://www.hoobank.com/newsletters/",
       },
     ],
   },
   {
-    title: "Partner",
+    title: "Sociedad",
     links: [
       {
-        name: "Our Partner",
+        name: "Nuestros Socios",
         link: "https://www.hoobank.com/our-partner/",
       },
       {
-        name: "Become a Partner",
+        name: "Conviertete en Socio",
         link: "https://www.hoobank.com/become-a-partner/",
       },
     ],
