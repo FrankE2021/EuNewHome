@@ -6,16 +6,16 @@ export const navLinks = [
     title: "Home",
   },
   {
-    id: "features",
-    title: "Features",
+    id: "servicios",
+    title: "Servicios",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "productos",
+    title: "Productos",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "portafolio",
+    title: "Portafolio",
   },
 ];
 
@@ -56,7 +56,7 @@ export const feedback = [
     id: "feedback-2",
     content:
       "Gracias a Eurekae, nuestro negocio ha crecido exponencialmente con sus innovadoras soluciones y soporte excepcional.",
-    name: "Maria Teresa Jimenez",
+    name: "Marien Sara Sanchez Rubio",
     title: "Cliente Premium",
     img: people02,
   },
@@ -73,17 +73,17 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
+    title: "Usuarios Activos",
     value: "500+",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
+    title: "Compañias Afiliadas",
     value: "50+",
   },
   {
     id: "stats-3",
-    title: "Transaction",
+    title: "Transacciones",
     value: "$200k+",
   },
 ];
