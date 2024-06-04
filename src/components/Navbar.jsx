@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from 'react-router-dom';
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
+import LogoutButton from "./LogoutButton";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -23,7 +24,11 @@ const Navbar = () => {
             <Link to={`/${nav.id}`}>{nav.title}</Link>
           </li>
         ))}
+
+        <LogoutButton/>
       </ul>
+
+
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img

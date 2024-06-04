@@ -34,6 +34,8 @@
   text-fill-color: transparent;
 }
 
+
+
 .bg-gold-gradient {
   background: linear-gradient(
     157.81deg,
@@ -52,6 +54,17 @@
     #ffffff -278.56%,
     #6d6d6d -78.47%,
     #11101d 91.61%
+  );
+}
+
+
+
+.bg-white-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #e9e7e7 -78.47%,
+    #cfcecf 91.61%
   );
 }
 

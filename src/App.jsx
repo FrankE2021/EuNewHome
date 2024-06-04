@@ -1,12 +1,13 @@
 // App.js
 import { BrowserRouter as Router } from 'react-router-dom';
-import AppRoutes from './routes/AppRoutes'; // Asegúrate de la ruta correcta
+import AppRoutes from './routes/AppRoutes'; 
+import Auth from './components/Auth';
 
 const App = () => {
   return (
     <Router>
-      <div className="App">
-        <AppRoutes />
+      <div className="App ">
+        <Auth />
       </div>
     </Router>
   );
