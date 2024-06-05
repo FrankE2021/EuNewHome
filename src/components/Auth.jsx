@@ -5,8 +5,6 @@ import Login from './Login';
 // Importando los modulos de FireBase
 import appFirebase from '../credenciales'
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
-import Home from '../pages/Home';
-import Login1 from './Login1';
 import AppRoutes from '../routes/AppRoutes';
 const auth = getAuth(appFirebase);
 
@@ -25,7 +23,7 @@ function Auth() {
 
   return (
     <div>
-        {usuario ? <AppRoutes correoUsuario = {usuario.email} /> : <Login1/>}
+        {usuario ? <AppRoutes correoUsuario = {usuario.email} /> : <Login/>}
     </div>
   )
 }
