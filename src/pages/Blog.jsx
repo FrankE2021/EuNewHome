@@ -1,9 +1,8 @@
 import React from 'react'
 import styles from "../style";
 import { Footer, Navbar } from "../components";
-import ImgBox from "../components/ImgBox"
 
-const Productos = () => {
+const Blog = () => {
   return (
     <div className="bg-primary w-full overflow-hidden">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
@@ -11,16 +10,7 @@ const Productos = () => {
         <Navbar />
       </div>
     </div>
-     
-    <div >
-      <ImgBox />
-    </div>
-    <div >
-      <ImgBox />
-    </div>
-    <div >
-      <ImgBox />
-    </div>
+
     
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
@@ -31,4 +21,4 @@ const Productos = () => {
   )
 }
 
-export default Productos
+export default Blog
