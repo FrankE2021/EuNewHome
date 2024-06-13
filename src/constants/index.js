@@ -60,7 +60,7 @@ export const feedback = [
     id: "feedback-2",
     content:
       "Gracias a Eurekae, nuestro negocio ha crecido exponencialmente con sus innovadoras soluciones y soporte excepcional.",
-    name: "Marien Sara Sanchez Rubio",
+    name: "Maite Jimenez Valido",
     title: "Cliente Premium",
     img: people02,
   },

@@ -2,7 +2,7 @@ import { premium } from "../assets";
 import styles, { layout } from "../style";
 
 const ImgBox = () => (
-  <section id="plan-box" className={`${styles.flexCenter} p-8 mb-5 sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
+  <section id="plan-box" className={`${styles.flexCenter} m-4 p-8 sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
     <div className={layout.sectionImgReverse}>
       <img src={premium} alt="premium" className="mb-3 w-[100%] h-[100%] relative z-[5] rounded-[20px]" />
 

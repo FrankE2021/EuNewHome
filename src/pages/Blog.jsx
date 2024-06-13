@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from "../style";
 import { Footer, Navbar } from "../components";
+import Blog1 from '../components/blog/Blog1';
+
 
 const Blog = () => {
   return (
@@ -9,6 +11,10 @@ const Blog = () => {
       <div className={`${styles.boxWidth}`}>
         <Navbar />
       </div>
+    </div>
+
+    <div>
+      <Blog1/>
     </div>
 
     
