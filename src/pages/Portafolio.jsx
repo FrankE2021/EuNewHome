@@ -4,7 +4,7 @@ import { Footer, Navbar } from "../components";
 import { projectsData } from "../constants";
 import Article from '../components/Article';
 import { blog05 } from '../components/blog/imports';
-import { menuBras ,euHome, ahorcado,tareas } from './importsPortafolio'
+import { menuBras ,euHome, ahorcado,tareas } from './importsPortafolio';
 
 const Portafolio = () => {
 
@@ -25,7 +25,7 @@ const Portafolio = () => {
 
    {/*  ==================== Contenido ====================*/}
 
-    <div className='ml-4 mr-4 '>  
+   <div className='ml-4 mr-4 '>  
       <div className="rounded-[20px] flex-1 grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
         <Article 
           imgUrl={menuBras}
@@ -42,7 +42,7 @@ const Portafolio = () => {
           text={projectsData[1]?.description} 
           link={projectsData[1]?.link} 
           handleButtonClick={(link) => handleButtonClick(link)} 
-          />
+        />
 
         <Article 
           imgUrl={ahorcado} 
