@@ -236,6 +236,16 @@ export const projectsData = [
     description: "Este juego esta diseñado para el desarrollo de la memoria visual, y tiene caracteristicas que lo hacen apto para todas las edades",
     link: "https://parejas.vercel.app/"
   },
+  {
+    title: "Version Beta de Eurekae Home",
+    description: "Plantilla alternativa para futuras integraciones con la paginna Home actual de Eurekae, destaca su diseño futurista y de fondo oscuro",
+    link: "https://gpt-project-eight-black.vercel.app/"
+  },
+  {
+    title: "Restaurante Eurekae Moderno",
+    description: "Pagina Web diseñada para la implementacion de un sitio web de un restaurante, caracterizada por plantillas modernas e interacciones suaves.",
+    link: "https://restaurante-eurekae.vercel.app/"
+  },
 ];
 
 

@@ -1,6 +1,6 @@
 // src/components/LogoutButton.js
 import React, { useState, useEffect } from 'react';
-import { getAuth, signOut, onAuthStateChanged } from 'firebase/auth';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import styles from '../style';
 
@@ -25,23 +25,13 @@ const LogoutButton = () => {
     return () => unsubscribe();
   }, []);
 
-  const handleLogout = () => {
-    signOut(auth).then(() => {
-      // Sign-out successful.
-      console.log("Usuario deslogueado");
-      navigate('/login'); // Redirigir a la página de inicio de sesión
-    }).catch((error) => {
-      // An error happened.
-      console.error("Error al desloguear: ", error);
-    });
-  };
 
   return (
     <>
       <button 
-        onClick={handleLogout} 
+        onClick={() => navigate('/login')}
         className={`py-1 px-2 ml-5 font-poppins font-medium text-[18px] text-primary bg-gold-gradient rounded-[10px] outline-none ${styles}`}>
-        Logout
+        Login
       </button>
     </>
   );

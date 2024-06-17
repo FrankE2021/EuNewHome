@@ -5,8 +5,8 @@ export const productsData = [
       link: "https://menubrascuba.vercel.app/"
     },
     {
-      title: "Pagina Inicial de Eurekae",
-      description: "Projecto efectuado en el 2022 para el inicio y posterior dessarrollo de la plataforma Eurekae",
+      title: "Poder e Alta Performance",
+      description: "Manual Práctico para Reprogramar sus Hábitos y Promover Mudanzas Profundas en su vida.",
       link: "https://eurekae.net"
     },
     {
@@ -33,6 +33,11 @@ export const productsData = [
       title: "Juego de Parejas",
       description: "Este juego esta diseñado para el desarrollo de la memoria visual, y tiene caracteristicas que lo hacen apto para todas las edades",
       link: "https://parejas.vercel.app/"
+    },
+    {
+      title: "Version Beta de Eurekae Home",
+      description: "Plantilla alternativa para futuras integraciones con la paginna Home actual de Eurekae, destaca su diseño futurista y de fondo oscuro",
+      link: "https://gpt-project-eight-black.vercel.app/"
     },
   ];
   

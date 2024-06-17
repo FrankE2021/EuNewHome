@@ -24,7 +24,7 @@ const Login = () => {
     } 
 
   return (
-    <div className={`flex flex-col items-center justify-center min-h-screen bg-black-gradient py-6 sm:px-6 lg:px-8`}>
+    <div className={`flex flex-col items-center justify-center min-h-screen bg-black-gradient-2 py-6 sm:px-6 lg:px-8`}>
         <div className='mt-4'>
             <img src={logo} alt='logo' className="max-w-xs h-auto" />
         </div> 
@@ -33,13 +33,33 @@ const Login = () => {
             <h1 className="font-poppins mb-4 text-xl font-semibold text-gradient">Iniciar Sesión</h1>
             <form onSubmit={funcAutenticacion}>
                 <div className="mb-4">
-                    <label className="font-poppins block text-gradient text-sm font-bold mb-2" htmlFor="email">Email</label>
-                    <input className="font-poppins shadow appearance-none border rounded-[20px] w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Ingresar Email" autoComplete="email"/>
+                    <label 
+                      className="font-poppins block text-gradient text-sm font-bold mb-2" 
+                      htmlFor="email">
+                        Email
+                    </label>
+                    <input 
+                      className="font-poppins shadow appearance-none border rounded-[10px] w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                      id="email" 
+                      type="email" 
+                      placeholder="Ingresar Email" 
+                      autoComplete="email"
+                    />
                 </div>
 
                 <div className='mb-6'>
-                    <label className="font-poppins block text-gradient text-sm font-bold mb-2" htmlFor="password">Contraseña</label>
-                    <input className="font-poppins shadow appearance-none border rounded-[20px] w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Ingresar Contraseña" autoComplete="current-password"/>
+                    <label 
+                      className="font-poppins block text-gradient text-sm font-bold mb-2" 
+                      htmlFor="password">
+                        Contraseña
+                    </label>
+                    <input 
+                      className="font-poppins shadow appearance-none border rounded-[10px] w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" 
+                      id="password" 
+                      type="password" 
+                      placeholder="Ingresar Contraseña" 
+                      autoComplete="current-password"
+                    />
                 </div>
 
                 <div className='flex items-center justify-between'>
