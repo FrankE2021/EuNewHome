@@ -1,8 +1,17 @@
 import React from 'react';
 import styles from '../style';
+import { useNavigate } from 'react-router-dom';
 
-const ArticlePortafolio = ({ imgUrl, date, text, title,link, handleButtonClick }) => (
-  <div className="flex flex-col bg-footer w-full h-full border rounded-[25px] bg-black-gradient-2">
+const ArticlePortafolio = ({ imgUrl, date, text, title,link, handleButtonClick }) => {
+  
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/articulo/${id}`);
+  };
+
+  return (
+  <div onClick={handleClick} className="flex flex-col bg-footer w-full h-full border rounded-[25px] bg-black-gradient-2">
     <div className="w-full h-full bg-bg">
       <img src={imgUrl} alt="blog_image" className="rounded-[25px] w-full h-full" />
     </div>
@@ -24,6 +33,7 @@ const ArticlePortafolio = ({ imgUrl, date, text, title,link, handleButtonClick }
 
     </div>
   </div>
-);
+  );
+}
 
 export default ArticlePortafolio;

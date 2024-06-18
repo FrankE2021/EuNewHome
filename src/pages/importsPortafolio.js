@@ -9,6 +9,8 @@ import reservaciones from '../assets/reservaciones.png';
 import parejas from '../assets/parejas.png';
 import homebeta from '../assets/homebeta.png';
 import restaurante from '../assets/restaurante.png';
+import art1 from '../assets/art1.2.jpg';
+import art2 from '../assets/art1.1.jpg';
 
 export {
   menuBras,
@@ -21,5 +23,7 @@ export {
   reservaciones,
   parejas,
   homebeta,
-  restaurante
+  restaurante,
+  art1,
+  art2
 };

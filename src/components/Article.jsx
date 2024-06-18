@@ -1,7 +1,15 @@
 import React from 'react';
 import styles from '../style';
+import { useNavigate } from 'react-router-dom';
 
-const Article = ({ imgUrl, date, text, title,link, handleButtonClick }) => (
+const Article = ({ imgUrl, date, text, title,link }) => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = (link) => {
+    navigate(link);
+  };
+  
+  return (
   <div className="flex flex-col bg-footer w-full h-full border rounded-[50px] bg-black-gradient-2">
     <div className="w-full h-full bg-bg">
       <img src={imgUrl} alt="blog_image" className="rounded-[50px] w-full h-full" />
@@ -24,6 +32,7 @@ const Article = ({ imgUrl, date, text, title,link, handleButtonClick }) => (
 
     </div>
   </div>
-);
+  );
+}
 
 export default Article;
