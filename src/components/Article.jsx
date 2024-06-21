@@ -2,11 +2,11 @@ import React from 'react';
 import styles from '../style';
 import { useNavigate } from 'react-router-dom';
 
-const Article = ({ imgUrl, date, text, title,link }) => {
+const Article = ({ id, imgUrl, date, title, resume, link }) => {
   const navigate = useNavigate();
 
-  const handleButtonClick = (link) => {
-    navigate(link);
+  const handleButtonClick = () => {
+    navigate(`/articulo/${id}`);
   };
   
   return (
@@ -19,14 +19,14 @@ const Article = ({ imgUrl, date, text, title,link }) => {
         <p className="font-poppins text-[11.65px] font-bold leading-[35px] text-white">{date}</p>
         <h1 className="font-poppins text-[25.11px] sm:text-[18px] sm:leading-[25px] font-extrabold leading-[30.3px] text-gradient mb-5 cursor-pointer border rounded-[20px] p-2">{title}</h1>
         <h3 className="font-poppins text-[23px] sm:text-[15px] sm:leading-[25px] font-bold leading-[30.3px] text-gradient mb-20 cursor-pointer">
-          {text}
+          {resume}
         </h3>
       </div>
 
       <button 
       type="button" 
       className={`py-4 px-6 font-poppins font-medium text-[22px] text-primary bg-gold-gradient rounded-[20px] outline-none ${styles}`} 
-      onClick={() => handleButtonClick(link)}>
+      onClick={handleButtonClick}>
         Visitar
       </button>
 

@@ -246,6 +246,26 @@ export const projectsData = [
     description: "Pagina Web diseñada para la implementacion de un sitio web de un restaurante, caracterizada por plantillas modernas e interacciones suaves.",
     link: "https://restaurante-eurekae.vercel.app/"
   },
+  {
+    title: "Juego de Rifa Basico",
+    description: "Este es un jugo al estilo de una rifa diseñado para su uso comercial en negocios que necesitan de juegos minimalistas pero utiles como esto para mantener siempre una interaccion con los clientes e incentivandolos a formar parte de esta rifa ",
+    link: "https://eurifa.vercel.app/"
+  },
+  {
+    title: "Página de Renta de Carros",
+    description: "Este sitio creado para la renta  y compra de carros esta pensado principalmente para la interaccion con el cliente, buscando siempre proporcionar la mejor experiencia posible.",
+    link: "https://rentaleurekae.vercel.app"
+  },
+  {
+    title: "Aplicacion Web de muestra de Votacion",
+    description: "Esta app web de votacion de muestra creada para su posterior uso en ambientes familiares tiene la funcion de ofrecer un juego divertido y dinamico, practico para intercammbios familiares basicos.",
+    link: "https://votacion-omega.vercel.app"
+  },
+  {
+    title: "Sitio para Reservar Viajes",
+    description: "Este sitio web fue creado con la intencion de proporcionar un medio para resolver una necesidad de hacer reservaciones online de varios destinos turisticos, ademas de proporcionnar un sistema de promociones fiables y dinamicas.",
+    link: "https://viajando-kappa.vercel.app/"
+  },
 ];
 
 

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "../style";
 import { Footer, Navbar } from "../components";
 import { projectsData } from "../constants";
-import { menuBras ,euHome, ahorcado,tareas, calculadora, reservaciones, parejas, homebeta, restaurante } from './importsPortafolio';
+import { viajandoEsp, rentcar, menuBras, eurifa ,euHome, ahorcado,tareas, calculadora, reservaciones, parejas, homebeta, restaurante, votacion } from './importsPortafolio';
 import ArticlePortafolio from '../components/ArticlePortafolio';
 
 const Portafolio = () => {
@@ -34,6 +34,10 @@ const Portafolio = () => {
         <ArticlePortafolio imgUrl={parejas} date="Ene 18, 2024" title={projectsData[6]?.title} text={projectsData[6]?.description} link={projectsData[6]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
         <ArticlePortafolio imgUrl={homebeta} date="Jun 5, 2024" title={projectsData[7]?.title} text={projectsData[7]?.description} link={projectsData[7]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
         <ArticlePortafolio imgUrl={restaurante} date="Jun 10, 2024" title={projectsData[8]?.title} text={projectsData[8]?.description} link={projectsData[8]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
+        <ArticlePortafolio imgUrl={eurifa} date="Jun 10, 2024" title={projectsData[9]?.title} text={projectsData[9]?.description} link={projectsData[9]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
+        <ArticlePortafolio imgUrl={rentcar} date="Jun 10, 2024" title={projectsData[10]?.title} text={projectsData[10]?.description} link={projectsData[10]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
+        <ArticlePortafolio imgUrl={votacion} date="Jun 10, 2024" title={projectsData[11]?.title} text={projectsData[11]?.description} link={projectsData[11]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
+        <ArticlePortafolio imgUrl={viajandoEsp} date="Jun 10, 2024" title={projectsData[12]?.title} text={projectsData[12]?.description} link={projectsData[12]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
       </div>  
     </div>
 

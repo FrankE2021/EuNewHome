@@ -7,7 +7,7 @@ import Portafolio from '../pages/Portafolio';
 import Login from '../components/Login';
 import Blog from '../pages/Blog';
 import Blog1 from '../components/blog/Blog1';
-import ArticuloBlog from '../pages/ArticuloBlog';
+import ArticleBlog from '../components/ArticleBlog';
 
 const AppRoutes = () => {
   return (
@@ -20,7 +20,7 @@ const AppRoutes = () => {
         <Route path="/portafolio" element={<Portafolio />} />
         <Route path="/blog" element={<Blog />} />
         {/* ======================== Rutas Blog ========================= */}
-        <Route path="/articulo/:id" element={<ArticuloBlog />} />
+        <Route path="/articulo/:id" element={<ArticleBlog />} />
         <Route path="/" element={<Blog1 />} />
     </Routes>
   );

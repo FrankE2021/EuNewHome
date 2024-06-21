@@ -2,7 +2,6 @@ import React from 'react'
 import styles from "../style";
 import { Footer, Navbar } from "../components";
 import Blog1 from '../components/blog/Blog1';
-import { blogData } from '../components/blog/blogData';
 
 
 const Blog = () => {

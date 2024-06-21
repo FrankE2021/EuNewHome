@@ -11,6 +11,10 @@ import homebeta from '../assets/homebeta.png';
 import restaurante from '../assets/restaurante.png';
 import art1 from '../assets/art1.2.jpg';
 import art2 from '../assets/art1.1.jpg';
+import eurifa from '../assets/eurifa.png';
+import rentcar from '../assets/rentcar.png';
+import votacion from '../assets/votacion.png';
+import viajandoEsp from '../assets/viajandoEsp.png';
 
 export {
   menuBras,
@@ -25,5 +29,9 @@ export {
   homebeta,
   restaurante,
   art1,
-  art2
+  art2,
+  eurifa,
+  rentcar,
+  votacion,
+  viajandoEsp
 };
