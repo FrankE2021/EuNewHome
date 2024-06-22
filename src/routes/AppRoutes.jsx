@@ -8,6 +8,7 @@ import Login from '../components/Login';
 import Blog from '../pages/Blog';
 import Blog1 from '../components/blog/Blog1';
 import ArticleBlog from '../components/ArticleBlog';
+import ArticleServices from '../components/ArticleServices';
 
 const AppRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const AppRoutes = () => {
         {/* ======================== Rutas Blog ========================= */}
         <Route path="/articulo/:id" element={<ArticleBlog />} />
         <Route path="/" element={<Blog1 />} />
+        <Route path="/servicio/:id" element={<ArticleServices />} />
     </Routes>
   );
 };

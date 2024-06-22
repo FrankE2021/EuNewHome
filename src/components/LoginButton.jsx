@@ -30,7 +30,7 @@ const LogoutButton = () => {
     <>
       <button 
         onClick={() => navigate('/login')}
-        className={`py-1 px-2 ml-5 font-poppins font-medium text-[18px] text-primary bg-gold-gradient rounded-[10px] outline-none ${styles}`}>
+        className={`py-1 px-2 ml-3 font-poppins font-medium text-[18px] text-primary bg-gold-gradient rounded-[10px] outline-none ${styles}`}>
         Login
       </button>
     </>

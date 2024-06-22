@@ -1,7 +1,8 @@
 import React from 'react'
 import styles from "../style";
 import { Footer, Navbar } from "../components";
-import ServicesOn from '../components/ServicesOn';
+
+import Servicios1 from '../components/Servicios1';
 
 const Servicios = () => {
 
@@ -17,10 +18,9 @@ const Servicios = () => {
       </div>
     </div>
 
-
     <div>
-      <ServicesOn handleButtonClick={handleButtonClick}/>
-    </div>
+      <Servicios1 />
+    </div>    
     
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>

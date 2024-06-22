@@ -2,11 +2,11 @@ import React from 'react';
 import styles from '../style';
 import { useNavigate } from 'react-router-dom';
 
-const Article = ({ id, imgUrl, date, title, resume, link }) => {
+const CajaServicio = ({ id, imgUrl, date, title, resume, link }) => {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    navigate(`/articulo/${id}`);
+    navigate(`/servicio/${id}`);
   };
   
   return (
@@ -27,7 +27,7 @@ const Article = ({ id, imgUrl, date, title, resume, link }) => {
       type="button" 
       className={`py-4 px-6 font-poppins font-medium text-[22px] text-primary bg-gold-gradient rounded-[20px] outline-none ${styles}`} 
       onClick={handleButtonClick}>
-        Visitar
+        Conocer Más
       </button>
 
     </div>
@@ -35,4 +35,4 @@ const Article = ({ id, imgUrl, date, title, resume, link }) => {
   );
 }
 
-export default Article;
+export default CajaServicio;

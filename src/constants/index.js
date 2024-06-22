@@ -269,11 +269,3 @@ export const projectsData = [
 ];
 
 
-
-export const Services = [
-  {
-    title: "Plan Premium",
-    description: "Nuestras mejores herramientas a sus Servicios",
-    link: "https://buy.stripe.com/14k8xY7CVbJq9Xi9AA"
-  },
-];  
