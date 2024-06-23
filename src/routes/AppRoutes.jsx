@@ -4,11 +4,11 @@ import Home from '../pages/Home';
 import Servicios from '../pages/Servicios';
 import Productos from '../pages/Productos';
 import Portafolio from '../pages/Portafolio';
-import Login from '../components/Login';
+import Login from '../pages/Login';
 import Blog from '../pages/Blog';
-import Blog1 from '../components/blog/Blog1';
 import ArticleBlog from '../components/ArticleBlog';
 import ArticleServices from '../components/ArticleServices';
+import Cart from '../components/Cart';
 
 const AppRoutes = () => {
   return (
@@ -20,9 +20,8 @@ const AppRoutes = () => {
         <Route path="/productos" element={<Productos />} />
         <Route path="/portafolio" element={<Portafolio />} />
         <Route path="/blog" element={<Blog />} />
-        {/* ======================== Rutas Blog ========================= */}
+        <Route path="/cart" element={<Cart />} />
         <Route path="/articulo/:id" element={<ArticleBlog />} />
-        <Route path="/" element={<Blog1 />} />
         <Route path="/servicio/:id" element={<ArticleServices />} />
     </Routes>
   );

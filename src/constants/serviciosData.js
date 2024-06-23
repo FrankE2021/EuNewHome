@@ -6,7 +6,8 @@ export const serviciosData = [
       link: "/servicio/1",
       title: "Marketing y Promoción",
       resume: 'Siempre buscando el mayor alcance y visibilidad para nuestros clientes.',
-      description: "................................................................"
+      description: "................................................................",
+      
     },
     {
       id: "2",
@@ -15,6 +16,7 @@ export const serviciosData = [
       link: "/servicio/2",
       title: "Desarrollo de Sitios Web",
       resume: 'Nuestro equipo de Desarrolladores trabaja en función de hacer sus sueños realidad.',
-      description: "...................................."
+      description: "....................................",
+      precio: '225'
     },
   ];

@@ -3,7 +3,7 @@ import styles from '../style';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { useParams } from 'react-router-dom';
-import { blogData } from './blog/blogData'; 
+import { blogData } from '../constants/blogData'; 
 
 const ArticleBlog = () => {
   let { id } = useParams();

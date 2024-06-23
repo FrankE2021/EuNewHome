@@ -1,58 +1,76 @@
-import React from 'react'
+import React from 'react';
 import styles from "../style";
 import { Footer, Navbar } from "../components";
-import { projectsData } from "../constants";
-import { viajandoEsp, rentcar, menuBras, eurifa ,euHome, ahorcado,tareas, calculadora, reservaciones, parejas, homebeta, restaurante, votacion } from './importsPortafolio';
-import ArticlePortafolio from '../components/ArticlePortafolio';
+import { portafolioData } from "../constants/portafolioData";
+import { useNavigate } from 'react-router-dom';
 
 const Portafolio = () => {
+
+  const navigate = useNavigate();
 
   const handleButtonClick = (link) => {
     window.open(link);
   };
 
   return (
-
-    /*  ==================== Navbar ====================*/
     <div className="bg-primary w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Navbar />
+      {/* Navbar */}
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Navbar />
+        </div>
+      </div>
+
+      {/* Contenido */}
+      <div className='m-4'>
+        <div className="text-center w-full text-left mb-8">
+          <h1 className="rounded-[20px] text-gradient font-poppins font-extrabold text-[46px] leading-[52px] md:text-[62px] md:leading-[75px]">
+            Mis Proyectos:
+          </h1>
+        </div>
+        <div className="rounded-[20px] flex-1 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
+          {portafolioData.map((project) => (
+            <div 
+              key={project.id} 
+              onClick={() => navigate(`/articulo/${project.id}`)} 
+              className="flex flex-col bg-footer w-full h-full border rounded-[25px] bg-black-gradient-2 cursor-pointer"
+            >
+              <div className="w-full h-full bg-bg">
+                <img src={project.imgUrl} alt="portfolio_image" className="rounded-[25px] w-full h-full" />
+              </div>
+              <div className="flex flex-col justify-between p-4 sm:p-6 h-full">
+                <div>
+                  <p className="font-poppins text-[11.65px] font-bold leading-[35px] text-white">{project.date}</p>
+                  <h1 className="font-poppins text-[25.11px] sm:text-[18px] sm:leading-[25px] font-extrabold leading-[30.3px] text-gradient mb-5 cursor-pointer border rounded-[20px] p-2">{project.title}</h1>
+                  <h3 className="font-poppins text-[23px] sm:text-[15px] sm:leading-[25px] font-bold leading-[30.3px] text-gradient mb-20 cursor-pointer">
+                    {project.text}
+                  </h3>
+                </div>
+
+                <button 
+                  type="button" 
+                  className={`py-4 px-6 font-poppins font-medium text-[22px] text-primary bg-gold-gradient rounded-[20px] outline-none ${styles}`} 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleButtonClick(project.link);
+                  }}
+                >
+                  Visitar
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Footer */}
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Footer />
+        </div>
       </div>
     </div>
-
-
-   {/*  ==================== Contenido ====================*/}
-   <div className='m-4'>  
-      <div className="rounded-[20px] flex-1 grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
-        <ArticlePortafolio imgUrl={menuBras} date="May 10, 2024" title={projectsData[0]?.title} text={projectsData[0]?.description} link={projectsData[0]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
-        <ArticlePortafolio imgUrl={euHome} date="Dec 22, 2022" title={projectsData[1]?.title} text={projectsData[1]?.description} link={projectsData[1]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
-        <ArticlePortafolio imgUrl={ahorcado} date="Feb 14, 2024" title={projectsData[2]?.title} text={projectsData[2]?.description} link={projectsData[2]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
-        <ArticlePortafolio imgUrl={tareas} date="May 12, 2024" title={projectsData[3]?.title} text={projectsData[3]?.description} link={projectsData[3]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
-        <ArticlePortafolio imgUrl={calculadora} date="Abr 27, 2024" title={projectsData[4]?.title} text={projectsData[4]?.description} link={projectsData[4]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
-        <ArticlePortafolio imgUrl={reservaciones} date="Feb 5, 2024" title={projectsData[5]?.title} text={projectsData[5]?.description} link={projectsData[5]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
-        <ArticlePortafolio imgUrl={parejas} date="Ene 18, 2024" title={projectsData[6]?.title} text={projectsData[6]?.description} link={projectsData[6]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
-        <ArticlePortafolio imgUrl={homebeta} date="Jun 5, 2024" title={projectsData[7]?.title} text={projectsData[7]?.description} link={projectsData[7]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
-        <ArticlePortafolio imgUrl={restaurante} date="Jun 10, 2024" title={projectsData[8]?.title} text={projectsData[8]?.description} link={projectsData[8]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
-        <ArticlePortafolio imgUrl={eurifa} date="Jun 10, 2024" title={projectsData[9]?.title} text={projectsData[9]?.description} link={projectsData[9]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
-        <ArticlePortafolio imgUrl={rentcar} date="Jun 10, 2024" title={projectsData[10]?.title} text={projectsData[10]?.description} link={projectsData[10]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
-        <ArticlePortafolio imgUrl={votacion} date="Jun 10, 2024" title={projectsData[11]?.title} text={projectsData[11]?.description} link={projectsData[11]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
-        <ArticlePortafolio imgUrl={viajandoEsp} date="Jun 10, 2024" title={projectsData[12]?.title} text={projectsData[12]?.description} link={projectsData[12]?.link} handleButtonClick={(link) => handleButtonClick(link)} />
-      </div>  
-    </div>
-
-
-
-
-
-    {/*  ==================== Footer ====================*/}
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Footer />
-      </div>
-    </div>
-  </div>
-  )
+  );
 }
 
-export default Portafolio
+export default Portafolio;
