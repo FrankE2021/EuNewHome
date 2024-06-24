@@ -15,11 +15,11 @@ const Blog = () => {
     </div>
 
     <div className="bg-primary rounded-[20px] m-3 flex flex-col px-4" id="blog">
-      <div className="text-center w-full text-left mb-5">
-        <h1 className="rounded-[20px] text-gradient font-poppins font-extrabold text-[46px] leading-[52px] md:text-[62px] md:leading-[75px]">
-          Nuestro BLOG:
-        </h1>
-      </div>
+      <div className="w-full flex justify-center items-center mb-10">
+          <h1 className="border p-4 rounded-[20px] text-gradient font-poppins font-extrabold text-[46px] leading-[52px] md:text-[62px] md:leading-[75px]">
+            Nuestro Blog
+          </h1>
+        </div>
       <div className="bg-primary rounded-[50px] flex flex-col lg:flex-row">
         <div className="rounded-[20px] flex-1 grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2">
           {blogData.map((article) => (

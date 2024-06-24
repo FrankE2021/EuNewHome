@@ -23,9 +23,9 @@ const Portafolio = () => {
 
       {/* Contenido */}
       <div className='m-4'>
-        <div className="text-center w-full text-left mb-8">
-          <h1 className="rounded-[20px] text-gradient font-poppins font-extrabold text-[46px] leading-[52px] md:text-[62px] md:leading-[75px]">
-            Mis Proyectos:
+        <div className="w-full flex justify-center items-center mb-10">
+          <h1 className="border p-4 rounded-[20px] text-gradient font-poppins font-extrabold text-[46px] leading-[52px] md:text-[62px] md:leading-[75px]">
+            Mis Proyectos
           </h1>
         </div>
         <div className="rounded-[20px] flex-1 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">

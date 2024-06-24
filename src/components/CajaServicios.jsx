@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../style';
 import { useNavigate } from 'react-router-dom';
 
-const CajaServicio = ({ id, imgUrl, date, title, resume, link }) => {
+const CajaServicios = ({ id, imgUrl, date, title, resume, link }) => {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
@@ -35,4 +35,4 @@ const CajaServicio = ({ id, imgUrl, date, title, resume, link }) => {
   );
 }
 
-export default CajaServicio;
+export default CajaServicios;

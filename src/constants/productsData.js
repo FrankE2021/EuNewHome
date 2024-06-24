@@ -7,7 +7,7 @@ export const productsData = [
       link: "/servicio/1",
       resume: 'Siempre buscando el mayor alcance y visibilidad para nuestros clientes.',
       description: "5G ELS-NX9 256GB 8GB RAM International Version - Silver Frost",
-      precio: "10"
+      precio: "200"
     },
     {
       id: "2",
@@ -17,17 +17,27 @@ export const productsData = [
       link: "https://eurekae.net",
       resume: 'Siempre buscando el mayor alcance y visibilidad para nuestros clientes.',
       description: "Manual Práctico para Reprogramar sus Hábitos y Promover Mudanzas Profundas en su vida.",
-      precio: '225'
+      precio: '15'
     },
     {
       id: "3",
-      imgUrl: 'https://i0.wp.com/www.erickpardo.com/wp-content/uploads/2020/11/marketing.webp?fit=1280%2C854&ssl=1',
-      date: "Desde Ago 20, 2023",
+      imgUrl: 'https://eurekae.s3.us-east-2.amazonaws.com/portafolio-pagina-web/premium.jpg',
+      date: "Desde Feb 15, 2024",
       title: "PLAN PREMIUM",
       link: "https://projecto12.vercel.app/juego",
       resume: 'Siempre buscando el mayor alcance y visibilidad para nuestros clientes.',
       description: "Paquete de ventajas y mejoras en los beneficios que ofrecemos a nuestros clientes. Incluimos respuestas  inmediatas, acceso a las mejores ofertas y mucho más...",
-      precio: '225'
+      precio: '10'
+    },   
+    {
+      id: "4",
+      imgUrl: 'https://eurekae.s3.us-east-2.amazonaws.com/productos-pagina-web/netflix.png',
+      date: "Desde Jun 23, 2024",
+      title: "Planes Netflix",
+      link: "https://projecto12.vercel.app/juego",
+      resume: 'Acceso a los diferentes planes disponibles en Netflix',
+      description: "Incluimos soporte a todos nuestros clientes, para garantizar un servicio eficaz y rápido. Además del acceso pleno a todas las ventajas de Netflix.",
+      precio: '24.99'
     },   
   ];
   

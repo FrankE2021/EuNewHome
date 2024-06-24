@@ -18,12 +18,12 @@ const Cart = () => {
       </div>
 
       {/* Carrito */}
-      <div className={`${styles.paddingX} ${styles.flexCenter} bg-black-gradient-2 rounded-[20px] m-2 flex flex-col py-5 px-5 `}>
+      <div className={`${styles.paddingX} ${styles.flexCenter} bg-primary rounded-[20px] m-2 flex flex-col py-5 px-5 `}>
         <div className={`${styles.boxWidth}`}>
           
-          <div className="text-center w-full text-left mb-5">
+          <div className="w-full flex justify-center items-center mb-10">
             <h1 className="border p-4 rounded-[20px] text-gradient font-poppins font-extrabold text-[46px] leading-[52px] md:text-[62px] md:leading-[75px]">
-              Carrito de Compras:
+              Carrito de Compra
             </h1>
           </div>
 

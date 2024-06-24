@@ -5,8 +5,12 @@ export const blogData = [
       date: "Jun 12, 2024",
       link: "/articulo/1",
       title: "Ya SOMOS oficiales",
-      resume: 'Eurekae es una empresa Oficial e Internacional !!!',
-      description: "Hola a todos los que siempre nos siguen por los diferentes canales de EUREKAE, venimos con excelentes noticias hoy, que ya han cambiado el curso de la historia de esta empresa, y por ende de nuestras facilidades: Somos una empresa OFICIAL en todo Brazil!!!!. FInalmente  despues de tanto esfuerzo este jueves 13 de junio fue aprovada mi solicitud para la creacion de mi entidad financiera y la representacion juridica en territorio brasileiro. Es nada mas y nada menos que el CNPJ(Cadastro Nacional de Pessoa Juridica), registro este que me avala como representante legal de esta empresa y nos esta permitiendo desde ya expandir todas nuestras funcionalidades, servicios y variedad de productos.    Es ademas un incentivo para quellos que quiera empezar a formar parte de esa comunidad para que se sientan mas seguros con su representacion dejandoles un sabor de confianza y estima de nuestra parte. Por ultimo cabe añadir que con solo 6 meses en este pais este es un paso de gigante que ya ha cambiado la forma en que enfrentamos los problemas de cada dia."
+      resume: 'Eurekae es una empresa Oficial e Internacional',
+      description: `Nos complace anunciar que Eurekae ha alcanzado un hito significativo en su trayectoria empresarial al convertirse en una empresa oficialmente reconocida en todo Brasil. El pasado jueves 13 de junio, nuestra solicitud para la creación de nuestra entidad financiera y representación jurídica en territorio brasileño fue aprobada, otorgándonos el prestigioso CNPJ (Cadastro Nacional de Pessoa Jurídica). Este registro nos avala como representantes legales de nuestra empresa y nos permite expandir todas nuestras funcionalidades, servicios y variedad de productos, marcando un nuevo capítulo en nuestra historia.
+      
+      La obtención del CNPJ no solo legitima nuestras operaciones en Brasil, sino que también fortalece nuestra relación con nuestros clientes y socios. Este reconocimiento oficial brinda una mayor seguridad y confianza a todos aquellos que desean formar parte de nuestra comunidad. Nos enorgullece poder ofrecer un servicio de calidad respaldado por una representación legal sólida, lo que nos permite enfrentar los desafíos diarios con una nueva perspectiva y determinación. 
+      
+      Con solo seis meses de presencia en Brasil, este logro representa un paso gigantesco para Eurekae. Nos impulsa a seguir mejorando y expandiendo nuestros servicios, siempre con el objetivo de satisfacer las necesidades de nuestros clientes. Agradecemos a todos los que nos han apoyado a lo largo de este viaje y esperamos seguir creciendo juntos, brindando soluciones innovadoras y confiables en el competitivo mercado brasileño.`
     },
     {
       id: "2",
@@ -15,6 +19,29 @@ export const blogData = [
       link: "/articulo/2",
       title: "Haciendo Pruebas en el Blog",
       resume: 'Implementando nuevas funcionalidades y opciones para el Blog',
-      description: "Hola a todos los que siempre nos siguen por los diferentes canales de EUREKAE,estamos llegando hoy con novedades en nuestro apartado del Blog que van a beneficiar la interactividad de todos."
+      description: `¡Hola a todos los seguidores de EUREKAE! Nos complace anunciar emocionantes novedades en nuestro apartado del Blog, diseñadas para mejorar la interactividad y la experiencia de todos nuestros lectores. Entendemos la importancia de mantenernos conectados y ofrecer contenido relevante y atractivo, por lo que hemos implementado diversas actualizaciones que permitirán una mayor participación y un diálogo más fluido con nuestra comunidad. 
+      
+      Estas actualizaciones no solo buscan enriquecer la experiencia del usuario, sino también fomentar una comunicación bidireccional más efectiva. Queremos que cada visita a nuestro Blog sea una oportunidad para aprender, compartir y crecer juntos. Esperamos que estas novedades sean de su agrado y los invitamos a explorar y aprovechar al máximo estas nuevas funciones. Gracias por su continuo apoyo y por ser parte de la comunidad EUREKAE. ¡Sigamos construyendo juntos un espacio más dinámico e interactivo!`
+    },
+    {
+      id: "3",
+      imgUrl: 'https://eurekae.s3.us-east-2.amazonaws.com/promociones/netflixBlog.jpg',
+      date: "Jun 23, 2024",
+      link: "/articulo/3",
+      title: "Netflix a nuestro alcance",
+      resume: 'Iniciando los preparativos para abrir acceso a todos los planes disponibles en la plataforma de Netflix',
+      description: `Eurekae se complace en anunciar que pronto ofrecerá acceso a todos los planes disponibles en Netflix directamente desde nuestra plataforma. Este avance permitirá a los usuarios explorar y seleccionar entre una variedad de opciones de suscripción de manera conveniente y segura. Integrando los servicios de Netflix en Eurekae, estamos comprometidos a simplificar el proceso de suscripción y mejorar la experiencia del usuario, garantizando un acceso fluido a los contenidos de entretenimiento más populares. 
+      Este desarrollo no solo busca facilitar el acceso a contenidos de calidad, sino también proporcionar opciones flexibles de pago que se adaptan a diversas necesidades financieras. Estamos trabajando arduamente para completar la integración en las próximas semanas, asegurando que nuestros usuarios disfruten de una experiencia mejorada al acceder a los servicios de entretenimiento más buscados del mundo digital.`
     },
   ];
+
+
+  // {
+  //   id: "2",
+  //   imgUrl: 'https://cdn.prod.website-files.com/619e15d781b21202de206fb5/6304ea816823cf0a4b06f777_what-is-testing.jpg',
+  //   date: "Jun 12, 2024",
+  //   link: "/articulo/2",
+  //   title: "Haciendo Pruebas en el Blog",
+  //   resume: 'Implementando nuevas funcionalidades y opciones para el Blog',
+  //   description: "Hola a todos los que siempre nos siguen por los diferentes canales de EUREKAE,estamos llegando hoy con novedades en nuestro apartado del Blog que van a beneficiar la interactividad de todos."
+  // },

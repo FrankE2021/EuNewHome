@@ -20,13 +20,13 @@ const Productos = () => {
     <div >
       <div className="w-full flex justify-center items-center">
         <h1 className="m-5  border p-3 rounded-[25px] text-gradient font-poppins font-extrabold text-[50px] leading-[52px] md:text-[60px] md:leading-[75px]">
-            Tienda Eurekae:
+            Tienda Eurekae
         </h1>
       </div>
         
       <div className="bg-primary w-full overflow-hidden">
-        <div className="bg-black-gradient-2 rounded-[50px] m-2 flex flex-col py-12 px-6" id="ModeloBlog">
-          <div className="bg-black-gradient rounded-[25px] flex flex-col lg:flex-row">
+        <div className="bg-primary rounded-[50px] m-2 flex flex-col py-12 px-6" id="ModeloBlog">
+          <div className="bg-primary rounded-[25px] flex flex-col lg:flex-row">
             <div className="rounded-[20px] flex-1 grid grid-cols-1 gap-4 sm:grid-cols-3 md:grid-cols-4">
               {productsData.map((product, index) => (
                 <ArticleProducts 
