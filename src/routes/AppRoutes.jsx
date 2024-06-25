@@ -9,6 +9,7 @@ import Blog from '../pages/Blog';
 import ArticleBlog from '../components/ArticleBlog';
 import ArticleServices from '../components/ArticleServices';
 import Cart from '../components/Cart';
+import PaymentMethod from '../components/PaymentMethod';
 
 const AppRoutes = () => {
   return (
@@ -23,6 +24,7 @@ const AppRoutes = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/articulo/:id" element={<ArticleBlog />} />
         <Route path="/servicio/:id" element={<ArticleServices />} />
+        <Route path="/payment" element={<PaymentMethod />} />
     </Routes>
   );
 };

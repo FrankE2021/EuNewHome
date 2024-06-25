@@ -4,9 +4,16 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import { useCart } from '../contexts/CartContext';
 import { productsData } from '../constants/productsData';
+import { useNavigate } from 'react-router-dom';
+
 
 const Cart = () => {
   const { cart } = useCart();
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/payment');
+  };
 
   return (
     <div className="bg-primary w-full overflow-hidden">
@@ -43,21 +50,29 @@ const Cart = () => {
 
                   return (
                     <div className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient rounded-[20px] box-shadow`} key={index}>
-                      <li className="flex-1 flex flex-col">
-                        <h4 className={styles.heading2}>{productInfo.title}</h4>
-                        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>{productInfo.description}</p>
-                        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>Precio: {productInfo.precio}</p>
+                      <li className="flex-1 flex  flex-col">
+                        <h4 className={`${styles.heading2}`}>{productInfo.title}</h4>
+                        <p className={`border p-4 rounded-[20px] text-gradient mx-auto  font-poppins font-extrabold text-[46px] leading-[52px] md:text-[62px] md:leading-[75px]`}>Precio: {productInfo.precio}</p>
                       </li>
+                      <div className=''>
+                        <button 
+                          className={`m-5 py-4 px-6 font-poppins font-medium text-[26px] text-primary bg-gold-gradient rounded-[20px] outline-none ${styles}`}
+                          onClick={handleButtonClick}
+                          >
+                            Pagar
+                        </button>
+                      </div>  
                     </div>  
                   );
                 })}
               </ul>
             )}
           </div>
-
         </div>
       </div>
 
+      
+            
       {/* Footer */}
       <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>

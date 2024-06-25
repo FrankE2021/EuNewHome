@@ -19,7 +19,7 @@ const Servicios = () => {
     </div>
 
     {/* ======================================= Body =============================== */}
-    <div className="bg-primary rounded-[20px] m-5 flex flex-col py-12 px-6" id="servicios1">
+    <div className="bg-primary rounded-[20px] m-3 flex flex-col py-12 px-3" id="servicios">
       <div className="w-full flex justify-center items-center mb-10">
         <h1 className="border p-4 rounded-[20px] text-gradient font-poppins font-extrabold text-[46px] leading-[52px] md:text-[62px] md:leading-[75px]">
           Nuestros Servicios
@@ -38,7 +38,7 @@ const Servicios = () => {
             link={primerArticulo.link}
           />
         </div>
-        <div className="rounded-[20px] flex-1 grid grid-cols-1 gap-8 lg:grid-cols-2">
+        <div className="rounded-[20px] flex-1 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2">
           {/* Mapeamos y renderizamos los artículos restantes */}
           {articulosRestantes.map((article) => (
             <CajaServicios

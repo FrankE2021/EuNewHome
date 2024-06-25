@@ -37,7 +37,7 @@ export const productsData = [
       link: "https://projecto12.vercel.app/juego",
       resume: 'Acceso a los diferentes planes disponibles en Netflix',
       description: "Incluimos soporte a todos nuestros clientes, para garantizar un servicio eficaz y rápido. Además del acceso pleno a todas las ventajas de Netflix.",
-      precio: '24.99'
+      precio: '4.99'
     },   
   ];
   
