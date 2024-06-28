@@ -12,7 +12,7 @@ import Cart from '../components/Cart';
 
 import PaymentMethod from '../components/PaymentMethod';
 import PagoBanco from '../components/PagoBanco';
-// import PagoTarjeta from '../components/PagoTarjeta';
+import PagoTarjeta from '../components/PagoTarjeta';
 import PagoPix from '../components/PagoPix';
 import PagoCuba from '../components/PagoCuba';
 
@@ -31,7 +31,7 @@ const AppRoutes = () => {
         <Route path="/servicio/:id" element={<ArticleServices />} />
         <Route path="/payment" element={<PaymentMethod />} />
         <Route path="/payment/bank" element={<PagoBanco />} />
-        <Route path="/payment/card" element={<PagoBanco />} />
+        <Route path="/payment/card" element={<PagoTarjeta />} />
         <Route path="/payment/pix" element={<PagoPix />} />
         <Route path="/payment/cuba" element={<PagoCuba />} />
     </Routes>
