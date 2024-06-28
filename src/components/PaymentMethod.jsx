@@ -1,16 +1,24 @@
 import React from 'react';
-import styles, {layout} from '../style';
+import { useNavigate } from 'react-router-dom';
+import styles, { layout } from '../style';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { useCart } from '../contexts/CartContext';
-import {features} from '../constants/MetodosPagoData'
-
+import { features } from '../constants/MetodosPagoData';
 
 const PaymentMethod = () => {
   const { cart } = useCart();
+  const navigate = useNavigate();
 
-  const MetodosPago = ({ icon, title, content, index }) => (
-    <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
+  const handlePaymentClick = (path) => {
+    navigate(path);
+  };
+
+  const MetodosPago = ({ icon, title, content, index, path }) => (
+    <div 
+      className={`flex flex-row m-4 p-6 self-start rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card cursor-pointer`}
+      onClick={() => handlePaymentClick(path)}
+    >
       <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
         <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
       </div>
@@ -34,20 +42,17 @@ const PaymentMethod = () => {
         </div>
       </div>
 
-				<div className="w-full flex justify-center items-center">
-					<h1 className="m-5  border p-3 rounded-[25px] text-gradient font-poppins font-extrabold text-[50px] leading-[52px] md:text-[60px] md:leading-[75px]">
-							Elija la forma de pago:
-					</h1>
-				</div>
-      <div className='m-8 bg-gray-gradient rounded-[20px]'>
-				<div className={`${layout.sectionImg} flex-col md:ml-0`}>
-					{features.map((feature, index) => (
-							<MetodosPago key={feature.id} {...feature} index={index} />
-					))}
-				</div>
-			</div>
-      
-            
+      <div className="w-full flex justify-center items-center">
+        <h1 className="m-5 border p-3 rounded-[25px] text-gradient font-poppins font-extrabold text-[50px] leading-[52px] md:text-[60px] md:leading-[75px]">
+          Elija la forma de pago:
+        </h1>
+      </div>
+      <div className={`${layout.sectionImg} flex-col md:ml-0`}>
+        {features.map((feature, index) => (
+          <MetodosPago key={feature.id} {...feature} index={index} path={feature.path} />
+        ))}
+      </div>
+
       {/* Footer */}
       <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
@@ -56,6 +61,6 @@ const PaymentMethod = () => {
       </div>
     </div>
   );
-}
+};
 
 export default PaymentMethod;

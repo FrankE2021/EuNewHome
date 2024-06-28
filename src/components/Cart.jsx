@@ -56,7 +56,7 @@ const Cart = () => {
                       </li>
                       <div className=''>
                         <button 
-                          className={`m-5 py-4 px-6 font-poppins font-medium text-[26px] text-primary bg-gold-gradient rounded-[20px] outline-none ${styles}`}
+                          className={`m-5 py-4 px-6 font-poppins font-medium text-[26px] text-primary bg-gold-gradient rounded-[20px] outline-none hover-bounce active-click ${styles}`}
                           onClick={handleButtonClick}
                           >
                             Pagar

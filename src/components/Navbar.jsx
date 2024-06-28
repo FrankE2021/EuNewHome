@@ -1,19 +1,24 @@
-import { useState } from "react";
-import { NavLink } from 'react-router-dom';
-import { close, logo, menu } from "../assets";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { logo, menu, close } from "../assets";
 import { navLinks } from "../constants";
-import LoginButton from "./LoginButton";
 import { socialMedia } from "../constants";
-import { FaShoppingCart } from 'react-icons/fa'; // Importa el icono del carrito de compras
+import { FaShoppingCart } from "react-icons/fa"; // Importa el icono del carrito de compras
+import { useAuth } from "../contexts/AuthContexts"; // Importa el hook useAuth
 
 const Navbar = () => {
+  const { usuario, cerrarSesion } = useAuth(); // Obtiene el usuario y la función de cierre de sesión del contexto
   const [toggle, setToggle] = useState(false);
 
   return (
     <nav className="w-full flex py-5 justify-between items-center navbar">
       {/* ============== Logo ====================== */}
       <NavLink to="/">
-        <img src={logo} alt="eurekae" className="w-[240px] h-[200px] mr-10 cursor-pointer" />
+        <img
+          src={logo}
+          alt="eurekae"
+          className="w-[240px] h-[200px] mr-10 cursor-pointer"
+        />
       </NavLink>
 
       {/* ================= Social Media ==================== */}
@@ -34,7 +39,7 @@ const Navbar = () => {
       {/* ================= Links ==================== */}
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav) => (
-          <li key={nav.id} className="mr-1.5">
+          <li key={nav.id} className="mr-1.5 hover-bounce active-click">
             <NavLink
               to={`/${nav.id}`}
               className={({ isActive }) =>
@@ -48,22 +53,50 @@ const Navbar = () => {
           </li>
         ))}
 
-        <NavLink to="/cart" className={({ isActive }) => `border px-2 py-1 rounded-[12px] ${isActive ? "text-white bg-gray-700" : "text-dimWhite"}`}>
-          <FaShoppingCart className="text-[24px] text-white cursor-pointer"/>
+        <NavLink
+          to="/cart"
+          className={({ isActive }) =>
+            `border px-2 py-1 rounded-[12px] hover-bounce active-click ${
+              isActive ? "text-white bg-gray-700" : "text-dimWhite"
+            }`
+          }
+        >
+          <FaShoppingCart className="text-[24px] text-white cursor-pointer" />
         </NavLink>
 
-        <div className='flex items-center'>
-          <LoginButton />
+        <div className="flex items-center">
+          {usuario ? (
+            <button
+              onClick={cerrarSesion}
+              className={`py-1 px-2 ml-2 font-poppins font-medium text-[18px] text-primary bg-gold-gradient rounded-[10px] outline-none hover-bounce active-click`}
+            >
+              Logout
+            </button>
+          ) : (
+            <NavLink
+              to="/login"
+              className={`py-1 px-2 ml-2 font-poppins font-medium text-[18px] text-primary bg-gold-gradient rounded-[10px] outline-none hover-bounce active-click`}
+            >
+              Login
+            </NavLink>
+          )}
         </div>
       </ul>
 
       {/* ================================ Hamburguer y Carrito ============================== */}
       <div className="flex items-center">
         <div className="sm:hidden flex items-center">
-        <NavLink to="/cart" className={({ isActive }) => `mr-3 border px-2 py-1 rounded-[12px] ${isActive ? "text-white bg-gray-700" : "text-dimWhite"}`}>
-          <FaShoppingCart className="text-[24px] text-white cursor-pointer" />
-        </NavLink>
-          <img 
+          <NavLink
+            to="/cart"
+            className={({ isActive }) =>
+              `mr-3 border px-2 py-1 rounded-[12px] ${
+                isActive ? "text-white bg-gray-700" : "text-dimWhite"
+              }`
+            }
+          >
+            <FaShoppingCart className="text-[24px] text-white cursor-pointer" />
+          </NavLink>
+          <img
             src={toggle ? close : menu}
             alt="menu"
             className="w-[28px] h-[28px] object-contain"
@@ -93,8 +126,22 @@ const Navbar = () => {
               </NavLink>
             </li>
           ))}
-          <div className='mt-4'>
-            <LoginButton />
+          <div className="mt-4">
+            {usuario ? (
+              <button
+                onClick={cerrarSesion}
+                className={`py-1 px-2 ml-2 font-poppins font-medium text-[18px] text-primary bg-gold-gradient rounded-[10px] outline-none hover-bounce active-click`}
+              >
+                Logout
+              </button>
+            ) : (
+              <NavLink
+                to="/login"
+                className={`py-1 px-2 ml-2 font-poppins font-medium text-[18px] text-primary bg-gold-gradient rounded-[10px] outline-none hover-bounce active-click`}
+              >
+                Login
+              </NavLink>
+            )}
           </div>
           {/* ================= Social Media (Mobile) ==================== */}
           <div className="mt-5 flex justify-center items-center flex-wrap">
@@ -103,7 +150,7 @@ const Navbar = () => {
                 key={social.id}
                 src={social.icon}
                 alt={social.id}
-                className={`w-[16px] h-[16px]  object-contain cursor-pointer ${
+                className={`w-[16px] h-[16px] object-contain cursor-pointer ${
                   index !== socialMedia.length - 1 ? "mr-4" : "mr-0"
                 }`}
                 onClick={() => window.open(social.link)}

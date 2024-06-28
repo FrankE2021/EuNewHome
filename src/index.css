@@ -151,3 +151,35 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+
+/* ===================== Animaciones para botones ================================================= */
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes click {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hover-bounce:hover {
+  animation: bounce 0.3s;
+}
+
+.active-click:active {
+  animation: click 0.1s;
+}
+/* ====================================================================================================== */

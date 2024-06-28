@@ -33,6 +33,17 @@ export const blogData = [
       description: `Eurekae se complace en anunciar que pronto ofrecerá acceso a todos los planes disponibles en Netflix directamente desde nuestra plataforma. Este avance permitirá a los usuarios explorar y seleccionar entre una variedad de opciones de suscripción de manera conveniente y segura. Integrando los servicios de Netflix en Eurekae, estamos comprometidos a simplificar el proceso de suscripción y mejorar la experiencia del usuario, garantizando un acceso fluido a los contenidos de entretenimiento más populares. 
       Este desarrollo no solo busca facilitar el acceso a contenidos de calidad, sino también proporcionar opciones flexibles de pago que se adaptan a diversas necesidades financieras. Estamos trabajando arduamente para completar la integración en las próximas semanas, asegurando que nuestros usuarios disfruten de una experiencia mejorada al acceder a los servicios de entretenimiento más buscados del mundo digital.`
     },
+    {
+    id: "4",
+    imgUrl: 'https://eurekae.s3.us-east-2.amazonaws.com/pagos-pagina-web/pagoBlogImg.jpg',
+    date: "Jun 12, 2024",
+    link: "/articulo/2",
+    title: "Fase de Implementación de pagos al 80%",
+    resume: 'Ya tenemos avances de gran importancia en la posibilidad de pagos en nuestra plataforma',
+    description: `Nos complace anunciar que hemos alcanzado importantes avances en nuestra plataforma de pagos. Hemos finalizado la implementación de pagos bancarios internacionales y hemos integrado con éxito el sistema de pagos PIX en Brasil, lo que permite a nuestros usuarios realizar transferencias rápidas y seguras dentro y fuera del país. Además, ahora es posible realizar transferencias bancarias en Cuba, facilitando aún más las transacciones para nuestros clientes cubanos y sus familiares en el extranjero.
+    
+    Asimismo, estamos en la etapa final del despliegue para habilitar pagos a través de tarjetas. Esta nueva modalidad complementará nuestras opciones de pago existentes, ofreciendo mayor comodidad y flexibilidad a nuestros usuarios. Con estos desarrollos, nuestra plataforma se posiciona como una opción líder para satisfacer diversas necesidades de pago, asegurando eficiencia y seguridad en todas las transacciones.`
+  },
   ];
 
 

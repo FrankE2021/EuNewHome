@@ -32,7 +32,7 @@ const ArticleProducts = ({ id, imgUrl, date, text, title }) => {
 
         <button 
           type="button" 
-          className={`py-4 px-6 font-poppins font-medium text-[22px] text-primary bg-gold-gradient rounded-[20px] outline-none ${styles}`} 
+          className={`py-4 px-6 font-poppins font-medium text-[22px] text-primary bg-gold-gradient rounded-[20px] outline-none hover-bounce active-click ${styles}`} 
           onClick={handleButtonClick}
         >
           Comprar
