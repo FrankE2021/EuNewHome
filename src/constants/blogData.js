@@ -2,7 +2,7 @@ export const blogData = [
     {
       id: "1",
       imgUrl: 'https://img.freepik.com/foto-gratis/celebracion-gente-copas-champan-haciendo-brindis_157027-3100.jpg',
-      date: "Jun 12, 2024",
+      date: "Jun 08, 2024",
       link: "/articulo/1",
       title: "Ya SOMOS oficiales",
       resume: 'Eurekae es una empresa Oficial e Internacional',
@@ -36,14 +36,32 @@ export const blogData = [
     {
     id: "4",
     imgUrl: 'https://eurekae.s3.us-east-2.amazonaws.com/pagos-pagina-web/pagoBlogImg.jpg',
-    date: "Jun 12, 2024",
-    link: "/articulo/2",
+    date: "Jun 25, 2024",
+    link: "/articulo/3",
     title: "Fase de Implementación de pagos al 80%",
     resume: 'Ya tenemos avances de gran importancia en la posibilidad de pagos en nuestra plataforma',
     description: `Nos complace anunciar que hemos alcanzado importantes avances en nuestra plataforma de pagos. Hemos finalizado la implementación de pagos bancarios internacionales y hemos integrado con éxito el sistema de pagos PIX en Brasil, lo que permite a nuestros usuarios realizar transferencias rápidas y seguras dentro y fuera del país. Además, ahora es posible realizar transferencias bancarias en Cuba, facilitando aún más las transacciones para nuestros clientes cubanos y sus familiares en el extranjero.
     
     Asimismo, estamos en la etapa final del despliegue para habilitar pagos a través de tarjetas. Esta nueva modalidad complementará nuestras opciones de pago existentes, ofreciendo mayor comodidad y flexibilidad a nuestros usuarios. Con estos desarrollos, nuestra plataforma se posiciona como una opción líder para satisfacer diversas necesidades de pago, asegurando eficiencia y seguridad en todas las transacciones.`
-  },
+    },
+    {
+    id: "5",
+    imgUrl: 'https://eurekae.s3.us-east-2.amazonaws.com/blog-pagina-web/loginblog.jpg',
+    date: "Jun 28, 2024",
+    link: "/articulo/5",
+    title: "La Seguridad es lo primero",
+    resume: 'Estamos finalizando la primera etapa en la configuracion y despliegue de la posibilidad de Iniciar y Cerrar Sesion.',
+    description: "Estamos emocionados de anunciar que estamos completando la primera etapa en la configuración y despliegue de las funcionalidades clave de nuestra plataforma. Pronto, los usuarios podrán disfrutar de una experiencia mejorada con la capacidad de iniciar y cerrar sesión de manera segura, así como registrarse fácilmente en nuestra plataforma. Esta nueva funcionalidad no solo fortalecerá la seguridad, sino que también ofrecerá una mayor comodidad y personalización para todos nuestros usuarios. Manténganse atentos para más actualizaciones y detalles sobre esta emocionante mejora."
+    },
+    {
+    id: "6",
+    imgUrl: 'https://eurekae.s3.us-east-2.amazonaws.com/blog-pagina-web/sistemaEntregas.png',
+    date: "Jul 08, 2024",
+    link: "/articulo/6",
+    title: "Sistema de Entregas FInalizado",
+    resume: 'Nuevo Sistema de Entregas para restaurantes y cafeterias Finalizado.',
+    description: "Recientemente, hemos concluido con éxito el desarrollo de un sistema de entregas personalizado para el restaurante Brascuba, una innovación que promete revolucionar su capacidad de gestión y expansión. Este sistema ha sido diseñado con funcionalidades avanzadas que optimizan el proceso de pedidos y entregas, lo que permite al restaurante atender a un mayor número de clientes de manera más eficiente y efectiva. La implementación de esta tecnología no solo mejora la experiencia del cliente, sino que también facilita un incremento exponencial en las ventas al simplificar la operativa diaria y reducir los tiempos de espera. Con este sistema, Brascuba está preparado para expandir su base de clientes y aumentar significativamente sus ingresos, aprovechando las ventajas de una logística modernizada y automatizada. Además, esta solución tecnológica está en línea con la visión de EUREKAE de impulsar negocios mediante estrategias efectivas y tecnología avanzada, destacando especialmente en el ámbito de la programación web y la innovación en servicios digitales."
+   },
   ];
 
 

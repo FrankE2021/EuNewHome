@@ -21,7 +21,7 @@ const Blog = () => {
           </h1>
         </div>
       <div className="bg-primary rounded-[50px] flex flex-col lg:flex-row">
-        <div className="rounded-[20px] flex-1 grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2">
+        <div className="rounded-[20px] flex-1 grid grid-cols-1 gap-4 ss:grid-cols-2 lg:grid-cols-3 sm:grid-cols-2">
           {blogData.map((article) => (
             <Article key={article.id} id={article.id} imgUrl={article.imgUrl} date={article.date} title={article.title} resume={article.resume} link={article.link}/>
           ))}

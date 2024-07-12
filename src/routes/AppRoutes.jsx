@@ -9,6 +9,7 @@ import Blog from '../pages/Blog';
 import ArticleBlog from '../components/ArticleBlog';
 import ArticleServices from '../components/ArticleServices';
 import Cart from '../components/Cart';
+import Promotions from '../pages/Promotions';
 
 import PaymentMethod from '../components/PaymentMethod';
 import PagoBanco from '../components/PagoBanco';
@@ -27,6 +28,7 @@ const AppRoutes = () => {
         <Route path="/portafolio" element={<Portafolio />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/promotions" element={<Promotions />} />
         <Route path="/articulo/:id" element={<ArticleBlog />} />
         <Route path="/servicio/:id" element={<ArticleServices />} />
         <Route path="/payment" element={<PaymentMethod />} />

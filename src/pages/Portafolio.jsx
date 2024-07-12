@@ -28,7 +28,7 @@ const Portafolio = () => {
             Mis Proyectos
           </h1>
         </div>
-        <div className="rounded-[20px] flex-1 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
+        <div className="rounded-[20px] flex-1 grid grid-cols-1 gap-4 ss:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {portafolioData.map((project) => (
             <div 
               key={project.id} 

@@ -9,9 +9,7 @@ const App = () => {
     <Router>
       <AuthProvider>
         <CartProvider>
-          <div className="App ">
             <AppRoutes />
-          </div>
         </CartProvider>  
       </AuthProvider>
     </Router>

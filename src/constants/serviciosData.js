@@ -53,17 +53,6 @@ export const serviciosData = [
     
     Este compromiso se refleja en nuestro constante esfuerzo por ofrecer soluciones innovadoras y un servicio al cliente excepcional. Cada transferencia no solo representa una transacción financiera, sino un vínculo humano fortalecido a través del cuidado y la solidaridad global. Confiados en nuestra experiencia y dedicación, seguimos siendo su socio de confianza en el mundo cambiante de las finanzas internacionales.`
     },
-    {
-    id: "4",
-    imgUrl: 'https://eurekae.s3.us-east-2.amazonaws.com/servicios-pagina-web/marketingPT.jpg',
-    date: "Desde Ago 05, 2023",
-    link: "/servicio/4",
-    title: "Recargas Internacionales",
-    resume: 'Mantenga conectado a sus familiares, y asegure que su saldo no llegue nunca a cero.',
-    description: `Desde agosto de 2023, nos hemos especializado en ofrecer un servicio integral de recargas internacionales, asegurando que mantenerse conectado con familiares y amigos en cualquier parte del mundo sea más fácil que nunca. Nuestro compromiso radica en proporcionar una plataforma eficiente y segura para recargar créditos de celular de manera rápida y confiable, sin importar la distancia geográfica. Con tarifas competitivas y una interfaz intuitiva, hemos facilitado que las personas puedan mantener comunicaciones fluidas y constantes, contribuyendo así a fortalecer los lazos afectivos y sociales a nivel global. 
-    
-    Nos enorgullece ser su aliado en esta era digital, donde la comunicación instantánea es fundamental. Cada recarga que procesamos representa nuestro compromiso continuo con la innovación y la satisfacción del cliente. Continuamos expandiendo nuestras capacidades y mejorando nuestros servicios para garantizar que usted pueda mantenerse conectado de manera eficiente y económica, sin importar dónde se encuentren sus seres queridos`
-    }
   ];
 
 

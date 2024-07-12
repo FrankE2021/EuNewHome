@@ -39,5 +39,15 @@ export const productsData = [
       description: "Incluimos soporte a todos nuestros clientes, para garantizar un servicio eficaz y rápido. Además del acceso pleno a todas las ventajas de Netflix.",
       precio: '4.99'
     },   
+    {
+      id: "5",
+      imgUrl: 'https://www.etecsa.cu/sites/default/files/promocion/SVG-22.svg',
+      date: "Desde Feb 22, 2024",
+      title: "Recargas Internacionales",
+      link: "https://projecto12.vercel.app/juego",
+      resume: 'Nuestras recargas estan dirigidas a sus familiares en Cuba.',
+      description: "Garantizamos la llegada inmediata a su familiar asi como la activacion de la Promocion Vigente.",
+      precio: '21.99'
+    },   
   ];
   

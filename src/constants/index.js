@@ -158,17 +158,17 @@ export const socialMedia = [
   {
     id: "social-media-1",
     icon: instagram,
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/rodriguezfrankacosta?igsh=ODRscmU4cWZ0bjMz",
   },
   {
     id: "social-media-2",
     icon: facebook,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/profile.php?id=61561512816179&mibextid=ZbWKwL",
   },
   {
     id: "social-media-3",
     icon: twitter,
-    link: "https://www.twitter.com/",
+    link: "https://wa.me/+5585987919687",
   },
   {
     id: "social-media-4",

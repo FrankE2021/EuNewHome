@@ -4,6 +4,7 @@ import { logo, menu, close } from "../assets";
 import { navLinks } from "../constants";
 import { socialMedia } from "../constants";
 import { FaShoppingCart } from "react-icons/fa"; // Importa el icono del carrito de compras
+import { FaBullhorn } from "react-icons/fa";
 import { useAuth } from "../contexts/AuthContexts"; // Importa el hook useAuth
 
 const Navbar = () => {
@@ -17,7 +18,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="eurekae"
-          className="w-[240px] h-[200px] mr-10 cursor-pointer"
+          className="w-[220px] h-[180px] mr-10 cursor-pointer"
         />
       </NavLink>
 
@@ -28,8 +29,8 @@ const Navbar = () => {
             key={social.id}
             src={social.icon}
             alt={social.id}
-            className={`w-[19px] h-[19px] object-contain cursor-pointer ${
-              index !== socialMedia.length - 1 ? "mr-5" : "mr-0"
+            className={`w-[30px] h-[30px] object-contain cursor-pointer hover-bounce ${
+              index !== socialMedia.length - 1 ? "mr-3" : "mr-0"
             }`}
             onClick={() => window.open(social.link)}
           />
@@ -43,7 +44,7 @@ const Navbar = () => {
             <NavLink
               to={`/${nav.id}`}
               className={({ isActive }) =>
-                `font-poppins font-normal border rounded-[10px] py-1 px-2 cursor-pointer text-[16px] ${
+                `font-poppins font-normal border rounded-[10px] py-1 px-1 cursor-pointer text-[16px] ${
                   isActive ? "text-white bg-gray-700" : "text-dimWhite"
                 }`
               }
@@ -53,10 +54,11 @@ const Navbar = () => {
           </li>
         ))}
 
+        {/* ========================== Cart ================= */}
         <NavLink
           to="/cart"
           className={({ isActive }) =>
-            `border px-2 py-1 rounded-[12px] hover-bounce active-click ${
+            `mr-1.5 border px-1 py-1 rounded-[12px] hover-bounce active-click ${
               isActive ? "text-white bg-gray-700" : "text-dimWhite"
             }`
           }
@@ -64,11 +66,25 @@ const Navbar = () => {
           <FaShoppingCart className="text-[24px] text-white cursor-pointer" />
         </NavLink>
 
+          {/* ==========================promociones ================= */}
+        <NavLink
+          to="/promotions"
+          className={({ isActive }) =>
+            `border px-1 py-1 rounded-[12px] hover-bounce active-click ${
+              isActive ? "text-white bg-gray-700" : "text-dimWhite"
+            }`
+          }
+        >
+          <FaBullhorn className="text-[24px] text-white cursor-pointer" />
+        </NavLink>
+
+
+          {/* ================================Login Logout======================== */}
         <div className="flex items-center">
           {usuario ? (
             <button
               onClick={cerrarSesion}
-              className={`py-1 px-2 ml-2 font-poppins font-medium text-[18px] text-primary bg-gold-gradient rounded-[10px] outline-none hover-bounce active-click`}
+              className={`py-1 px-2 ml-1.5 font-poppins font-medium text-[18px] text-primary bg-gold-gradient rounded-[10px] outline-none hover-bounce active-click`}
             >
               Logout
             </button>
@@ -89,17 +105,31 @@ const Navbar = () => {
           <NavLink
             to="/cart"
             className={({ isActive }) =>
-              `mr-3 border px-2 py-1 rounded-[12px] ${
+              `mr-1 border px-2 py-1 rounded-[12px] ${
                 isActive ? "text-white bg-gray-700" : "text-dimWhite"
               }`
             }
           >
-            <FaShoppingCart className="text-[24px] text-white cursor-pointer" />
+            <FaShoppingCart className="text-[20px] text-white cursor-pointer" />
           </NavLink>
+
+          {/* ================Promo======================= */}
+          <NavLink
+            to="/promotions"
+            className={({ isActive }) =>
+              `mr-1 border px-2 py-1 rounded-[12px] ${
+                isActive ? "text-white bg-gray-700" : "text-dimWhite"
+              }`
+            }
+          >
+            <FaBullhorn className="text-[20px] text-white cursor-pointer" />
+          </NavLink>
+
+
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[28px] h-[28px] object-contain"
+            className="w-[26px] h-[26px] object-contain"
             onClick={() => setToggle(!toggle)}
           />
         </div>
@@ -117,7 +147,7 @@ const Navbar = () => {
                 to={`/${nav.id}`}
                 className={({ isActive }) =>
                   `font-poppins font-medium cursor-pointer text-[16px] ${
-                    isActive ? "text-white bg-blue-500" : "text-dimWhite"
+                    isActive ? "text-black bg-gold-gradient p-1 rounded-[5px]" : "text-dimWhite"
                   }`
                 }
                 onClick={() => setToggle(false)}
@@ -150,8 +180,8 @@ const Navbar = () => {
                 key={social.id}
                 src={social.icon}
                 alt={social.id}
-                className={`w-[16px] h-[16px] object-contain cursor-pointer ${
-                  index !== socialMedia.length - 1 ? "mr-4" : "mr-0"
+                className={`w-[20px] h-[20px] object-contain cursor-pointer ${
+                  index !== socialMedia.length - 1 ? "mr-3" : "mr-0"
                 }`}
                 onClick={() => window.open(social.link)}
               />

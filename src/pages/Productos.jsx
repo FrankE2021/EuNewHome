@@ -27,7 +27,7 @@ const Productos = () => {
       <div className="bg-primary w-full overflow-hidden">
         <div className="bg-primary rounded-[50px] m-2 flex flex-col py-12 px-6" id="ModeloBlog">
           <div className="bg-primary rounded-[25px] flex flex-col lg:flex-row">
-            <div className="rounded-[20px] flex-1 grid grid-cols-1 gap-4 sm:grid-cols-3 md:grid-cols-4">
+            <div className="rounded-[20px] flex-1 grid grid-cols-1 gap-4 ss:grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
               {productsData.map((product, index) => (
                 <ArticleProducts 
                   key={product.id} 

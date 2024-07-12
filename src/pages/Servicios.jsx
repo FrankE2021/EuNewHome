@@ -38,7 +38,7 @@ const Servicios = () => {
             link={primerArticulo.link}
           />
         </div>
-        <div className="rounded-[20px] flex-1 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2">
+        <div className="rounded-[20px] flex-1 grid grid-cols-1 gap-4 ss:grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
           {/* Mapeamos y renderizamos los artículos restantes */}
           {articulosRestantes.map((article) => (
             <CajaServicios
