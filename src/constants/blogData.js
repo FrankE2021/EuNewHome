@@ -62,7 +62,39 @@ export const blogData = [
     resume: 'Nuevo Sistema de Entregas para restaurantes y cafeterias Finalizado.',
     description: "Recientemente, hemos concluido con éxito el desarrollo de un sistema de entregas personalizado para el restaurante Brascuba, una innovación que promete revolucionar su capacidad de gestión y expansión. Este sistema ha sido diseñado con funcionalidades avanzadas que optimizan el proceso de pedidos y entregas, lo que permite al restaurante atender a un mayor número de clientes de manera más eficiente y efectiva. La implementación de esta tecnología no solo mejora la experiencia del cliente, sino que también facilita un incremento exponencial en las ventas al simplificar la operativa diaria y reducir los tiempos de espera. Con este sistema, Brascuba está preparado para expandir su base de clientes y aumentar significativamente sus ingresos, aprovechando las ventajas de una logística modernizada y automatizada. Además, esta solución tecnológica está en línea con la visión de EUREKAE de impulsar negocios mediante estrategias efectivas y tecnología avanzada, destacando especialmente en el ámbito de la programación web y la innovación en servicios digitales."
    },
+   {
+    id: "7",
+    imgUrl: 'https://eurekae.s3.us-east-2.amazonaws.com/blog-pagina-web/sistema-agendamiento.png',
+    date: "Jul 11, 2024",
+    link: "/articulo/7",
+    title: "Agendando Citas con su Médico",
+    resume: 'Recién concluido el sistema de Agendamiento Online de Citas para  Clínicas',
+    description: `Recién concluido el sistema de Agendamiento Online de Citas para Clínicas, diseñado para mejorar la eficiencia y comodidad en la gestión de citas médicas. Este innovador sistema permite a los pacientes agendar sus citas de manera rápida y sencilla a través de una plataforma intuitiva y accesible desde cualquier dispositivo con conexión a internet. La flexibilidad en los horarios es una de sus características destacadas, permitiendo a los usuarios seleccionar fechas y horas que se ajusten a sus necesidades y disponibilidad. Además, el sistema envía recordatorios automáticos para reducir la tasa de inasistencia a las citas.
+    El sistema también ofrece una gran versatilidad en el acceso a la información, facilitando a los profesionales de la salud la gestión de sus agendas y el acceso a los historiales médicos de los pacientes en tiempo real. Los administradores de las clínicas pueden monitorear y ajustar las citas de manera eficiente, mejorando la organización interna y la calidad del servicio. Con este nuevo sistema, se espera una significativa reducción en los tiempos de espera y una experiencia más satisfactoria tanto para los pacientes como para los profesionales de la salud.`
+   },
+   {
+    id: "8",
+    imgUrl: 'https://eurekae.s3.us-east-2.amazonaws.com/blog-pagina-web/sistema-recetas.png',
+    date: "Jul 9, 2024",
+    link: "/articulo/8",
+    title: "Recetas a Salvo!!!",
+    resume: 'Una vez más el área de salud se beneficia con la tecnología, esta vez con un sitema de salvaguarda de las recetas médicas',
+    description: ` Este innovador sistema garantiza la seguridad y la integridad de la información médica, almacenando las recetas de manera digital y protegida. Los pacientes pueden acceder a sus prescripciones en cualquier momento y desde cualquier lugar, evitando la pérdida de documentos físicos y mejorando la continuidad de su tratamiento. Además, los profesionales de la salud pueden consultar y actualizar las recetas de manera eficiente, asegurando que siempre dispongan de la información más actualizada.
+    También incluye avanzadas medidas de seguridad para proteger la información sensible de los pacientes. Con cifrado de datos y acceso restringido, se asegura que solo las personas autorizadas puedan ver y modificar las recetas. Esto no solo mejora la confidencialidad de los datos médicos, sino que también previene errores y fraudes. En definitiva, este sistema no solo facilita el acceso y la gestión de las recetas médicas, sino que también ofrece una capa adicional de protección y tranquilidad tanto para los pacientes como para los profesionales de la salud.`
+   },
+   {
+    id: "9",
+    imgUrl: 'https://eurekae.s3.us-east-2.amazonaws.com/blog-pagina-web/social-eurekae.png',
+    date: "Jul 15, 2024",
+    link: "/articulo/9",
+    title: "Ya Tenemos Red Social",
+    resume: 'Despues de tanto esfuerzo y sacrificio ya hoy nos vanagloriamos de tener nuestra propia Red Social. ARRIBA EUREKAE!!!!!',
+    description: `Esta plataforma innovadora no solo conecta a personas de todo el mundo, sino que también ofrece una variedad de funcionalidades diseñadas para mejorar la experiencia del usuario. Los miembros de nuestra comunidad pueden subir publicaciones fácilmente, compartiendo fotos, videos y pensamientos con sus seguidores. Cada publicación se puede guardar para revisarla más tarde, asegurando que no se pierda ningún contenido importante.
+    Además, nuestra red social permite a los usuarios interactuar con las publicaciones de otros, dando "me gusta" para mostrar su apoyo y aprecio. También es posible seguir a otros usuarios para mantenerse actualizado con sus actividades y publicaciones. Estas funcionalidades fomentan un entorno dinámico y conectado, donde cada miembro puede expresar su individualidad y construir relaciones significativas. Con esta nueva red social, EUREKAE continúa su compromiso con la innovación y la creación de soluciones tecnológicas que potencian la conexión y la colaboración entre personas.`
+   },
   ];
+
+
 
 
   // {

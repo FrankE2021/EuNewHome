@@ -1,5 +1,12 @@
 export const portafolioData = [
     {
+      title: "Red Social de Eurekae",
+      text: "Projecto iniciado con el fin de ofrecer a todos los clientes y amigos de EUREKAE un lugar dónde compartir y conocer las novedades que se presentan. Persigue también la posibilidad de promover el intercambio sano y dónde cada uno de nosotros tiene la posibilidad de aportar su granito de arena",
+      link: "https://menubrascuba.vercel.app/",
+      imgUrl: 'https://eurekae.s3.us-east-2.amazonaws.com/blog-pagina-web/social-eurekae.png',
+      date: 'May 10, 2024'
+    },
+    {
       title: "Menu para el Restaurante BrasCuba",
       text: "Projecto desarollado para comprender todo el Menu real del Restaurante BrasCuba, facilitando asi un acceso rapido y dinamico al cliente",
       link: "https://menubrascuba.vercel.app/",
@@ -85,9 +92,30 @@ export const portafolioData = [
     },
     {
       title: "Sitio para Reservar Viajes",
-      text: "Este sitio web fue creado con la intencion de proporcionar un medio para resolver una necesidad de hacer reservaciones online de varios destinos turisticos, ademas de proporcionnar un sistema de promociones fiables y dinamicas.",
+      text: "Este sitio web fue creado con la intencion de proporcionar un medio para resolver una necesidad de hacer reservaciones online de varios destinos turisticos, ademas de proporcionar un sistema de promociones fiables y dinamicas.",
       link: "https://viajando-kappa.vercel.app/",
       imgUrl: 'https://eurekae.s3.us-east-2.amazonaws.com/portafolio-pagina-web/viajandoEsp.png',
       date: 'May 10, 2024'
+    },
+    {
+      title: "Sistema de Agendamientos",
+      text: "Este Sistema fue creado para resolver la constante problemática que enfrentan los hospitales y clínicas con sus pacientes a la hora de reservar citas con sus respectivos doctores, dando así una herramienta de gestión confiable y eficiente",
+      link: "https://saludeurekae.vercel.app",
+      imgUrl: 'https://eurekae.s3.us-east-2.amazonaws.com/blog-pagina-web/sistema-agendamiento.png',
+      date: 'Jul 11, 2024'
+    },
+    {
+      title: "Sistema de Recetas Médicas",
+      text: "Sistema creado como solución a la necesidad imperante que enfrentan los médicos hoy en día de gestionar la cantidad de recetas que entregan a sus pacientes, así cómo la información contenida en cada una de ellas.",
+      link: "https://receitas.eurekae.net",
+      imgUrl: 'https://eurekae.s3.us-east-2.amazonaws.com/blog-pagina-web/sistema-recetas.png',
+      date: 'Jul 09, 2024'
+    },
+    {
+      title: "Sistema de Entregas",
+      text: "Las Entregas constituyen hoy en día una parte fundamental en las empresas de alimentación y este sistema tiene cómo objetivo ofrecer a los clientes una plataforma dónde puedan hacer sus pedidos de manera dinámica y eficiente, además de una interfaz intuitiva con toda la información necesaria.",
+      link: "https://brascub.eurekae.net",
+      imgUrl: 'https://eurekae.s3.us-east-2.amazonaws.com/blog-pagina-web/sistemaEntregas.png',
+      date: 'Jul 09, 2024'
     },
   ];
